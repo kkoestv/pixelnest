@@ -1,71 +1,69 @@
-/* Generell layout */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* Login.css */
+
+
+.background-container {
+  position: fixed; /* For å dekke hele vinduet */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  background-color: #4c8bf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  height: 500px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 24px;
+  color: rgb(45, 83, 154);
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
   
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Lys bakgrunnsfarge */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Login-container */
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  /* Login-boksen */
-  .login-box {
-    background-color: #cce7ff; 
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
-  
-  .login-header {
-    font-size: 2rem;
-    color: #0078d4; 
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0078d4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #005fa3;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 10px;
-  }
-  
+}
+
+.login-box input {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.2s;
+}
+
+.login-box input:focus {
+  border-color: #4c8bf5;
+  outline: none;
+}
+
+.login-box button {
+  padding: 12px;
+  background-color: #4c8bf5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 16px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-box button:hover {
+  background-color: #3a6fd9;
+}
