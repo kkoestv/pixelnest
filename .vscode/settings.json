@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c1432f0b-86b3-4ac7-8026-4148f738c73e/resourceGroups/web-app-project/providers/Microsoft.Web/sites/pixelnest",
+    "appService.deploySubpath": "."
+}
