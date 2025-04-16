@@ -43,7 +43,7 @@ function Login() {
           />
           <button type="submit">Logg inn</button>
         </form>
-        <p>{message}</p>
+        <p className="response-message">{message}</p>
       </div>
     </div>
   );
